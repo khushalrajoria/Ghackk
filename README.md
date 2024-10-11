@@ -120,6 +120,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 Author
 
-- **Your Name** - [GitHub](https://github.com/khushalrajoria) | [LinkedIn](https://www.linkedin.com/in/khushal-rajoria-cse/)
+- **Khushal Rajoria** - [GitHub](https://github.com/khushalrajoria) | [LinkedIn](https://www.linkedin.com/in/khushal-rajoria-cse/)
 
 ---
