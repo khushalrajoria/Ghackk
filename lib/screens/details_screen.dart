@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../provider/webtoon_model.dart';
 import '../provider/webtoon_provider.dart';
+import '../widgets/rating_widget.dart';
+
 
 class DetailScreen extends StatelessWidget {
   final WebtoonCategory category;
@@ -21,13 +23,27 @@ class DetailScreen extends StatelessWidget {
           children: [
             Image.network(category.thumbnailUrl),
             const SizedBox(height: 5),
-            Align(
-              alignment: Alignment.center,
-              child: ElevatedButton(
-                onPressed: () {
-                  webtoonProvider.toggleFavorite(category);
-                },
-                child: Text(isFavorite ? 'Remove from Favorites' : 'Add to Favorites'),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8.0),
+              child: Column(
+                children: [
+                  // Adding the Rating Widget
+                  RatingWidget(initialRating: 3.5), // Set the initial rating as needed
+                  const SizedBox(height: 10), // Spacing between the rating and button
+                  
+                  // Add to Favorites Button
+                  Align(
+                    alignment: Alignment.center,
+                    child: ElevatedButton(
+                      onPressed: () {
+                        webtoonProvider.toggleFavorite(category);
+                      },
+                      child: Text(isFavorite
+                          ? 'Remove from Favorites'
+                          : 'Add to Favorites'),
+                    ),
+                  ),
+                ],
               ),
             ),
             const SizedBox(height: 5),
@@ -42,15 +58,19 @@ class DetailScreen extends StatelessWidget {
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
               ),
             ),
-            const CharacterDisplay(
-              imageUrl: 'https://animemangatoon.com/wp-content/uploads/2024/05/64u47lg4-360x504.png.webp',
+            CharacterDisplay(
+              imageUrl:
+                  'https://animemangatoon.com/wp-content/uploads/2024/05/64u47lg4-360x504.png.webp',
               name: 'Hades',
-              description: 'In the Lore Olympus webtoon, Hades, the God of the underworld, takes center stage. Often depicted as a handsome blue man in a business suit, Hades runs the Underworld Corporation, serves as the older brother of Zeus and Poseidon, and plays a role in the Six Traitor Dynasty. His character takes on the burden of leadership and pursuing personal interests.',
+              description:
+                  'In the Lore Olympus webtoon, Hades, the God of the underworld, takes center stage. Often depicted as a handsome blue man in a business suit, Hades runs the Underworld Corporation, serves as the older brother of Zeus and Poseidon, and plays a role in the Six Traitor Dynasty. His character takes on the burden of leadership and pursuing personal interests.',
             ),
-            const CharacterDisplay(
-              imageUrl: 'https://animemangatoon.com/wp-content/uploads/2024/05/myq53tdb-360x504.png.webp',
+            CharacterDisplay(
+              imageUrl:
+                  'https://animemangatoon.com/wp-content/uploads/2024/05/myq53tdb-360x504.png.webp',
               name: 'Persephone',
-              description: 'Persephone, the goddess of spring, is the story’s heroine alongside the underworld. Initially portrayed as an innocent and naive young woman, her character develops dramatically as she faces more challenges.',
+              description:
+                  'Persephone, the goddess of spring, is the story’s heroine alongside the underworld. Initially portrayed as an innocent and naive young woman, her character develops dramatically as she faces more challenges.',
             ),
             const Padding(
               padding: EdgeInsets.all(8.0),
@@ -59,15 +79,19 @@ class DetailScreen extends StatelessWidget {
                 style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
               ),
             ),
-            const CharacterDisplay(
-              imageUrl: 'https://animemangatoon.com/wp-content/uploads/2024/05/zo3dwfwa-360x504.png.webp',
+            CharacterDisplay(
+              imageUrl:
+                  'https://animemangatoon.com/wp-content/uploads/2024/05/zo3dwfwa-360x504.png.webp',
               name: 'Hermes',
-              description: 'Hermes, the God of speed travel, is depicted as an athletic man in red. He works as a soul collector for Hades and is an old friend of Persephone.',
+              description:
+                  'Hermes, the God of speed travel, is depicted as an athletic man in red. He works as a soul collector for Hades and is an old friend of Persephone.',
             ),
-            const CharacterDisplay(
-              imageUrl: 'https://animemangatoon.com/wp-content/uploads/2024/05/6g6fq36m-360x504.png.webp',
+            CharacterDisplay(
+              imageUrl:
+                  'https://animemangatoon.com/wp-content/uploads/2024/05/6g6fq36m-360x504.png.webp',
               name: 'Artemis',
-              description: 'Artemis, the goddess of the hunt, is Persephone’s best friend and roommate. She is a robust, dark-red tomboy fiercely protective of Persephone.',
+              description:
+                  'Artemis, the goddess of the hunt, is Persephone’s best friend and roommate. She is a robust, dark-red tomboy fiercely protective of Persephone.',
             ),
           ],
         ),
@@ -81,7 +105,7 @@ class CharacterDisplay extends StatelessWidget {
   final String name;
   final String description;
 
-  const CharacterDisplay({super.key, 
+  const CharacterDisplay({
     required this.imageUrl,
     required this.name,
     required this.description,
@@ -95,14 +119,14 @@ class CharacterDisplay extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           SizedBox(
-            width: 120, 
-            height: 180,
+            width: 120, // Increased image size
+            height: 180, // Increased image size
             child: Image.network(
               imageUrl,
-              fit: BoxFit.cover, 
+              fit: BoxFit.cover, // Adjusts the image fit to cover the size
             ),
           ),
-          const SizedBox(width: 10),
+          const SizedBox(width: 10), // Adds spacing between image and text
           Expanded(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
