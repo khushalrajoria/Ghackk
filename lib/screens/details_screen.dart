@@ -81,7 +81,7 @@ class CharacterDisplay extends StatelessWidget {
   final String name;
   final String description;
 
-  const CharacterDisplay({
+  const CharacterDisplay({super.key, 
     required this.imageUrl,
     required this.name,
     required this.description,

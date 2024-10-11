@@ -13,7 +13,6 @@ class WebtoonCategory {
     required this.description,
   });
 
-  // Factory constructor to create WebtoonCategory from JSON
   factory WebtoonCategory.fromJson(Map<String, dynamic> json) {
     return WebtoonCategory(
       title: json['title'],
@@ -24,7 +23,6 @@ class WebtoonCategory {
     );
   }
 
-  // Method to convert WebtoonCategory to JSON
   Map<String, dynamic> toJson() {
     return {
       'title': title,

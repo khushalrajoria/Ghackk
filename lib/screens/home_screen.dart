@@ -17,7 +17,7 @@ class HomeScreen extends StatelessWidget {
       centerTitle: true,
       actions: [
         IconButton(icon: const Icon(Icons.favorite), onPressed: () {
-          Navigator.push(context, MaterialPageRoute(builder: (context) =>  FavoritesScreen()));
+          Navigator.push(context, MaterialPageRoute(builder: (context) =>  const FavoritesScreen()));
           },)
       ],
       ),

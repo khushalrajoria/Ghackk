@@ -3,6 +3,8 @@ import 'package:provider/provider.dart';
 import '../provider/webtoon_provider.dart';
 
 class FavoritesScreen extends StatelessWidget {
+  const FavoritesScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     final favorites = Provider.of<WebtoonProvider>(context).favorites;

@@ -17,7 +17,7 @@ class RatingWidget extends StatelessWidget {
       itemCount: 5,
       itemBuilder: (context, _) => const Icon(Icons.star, color: Colors.amber),
       onRatingUpdate: (rating) {
-        print(rating); // Save this rating in the provider
+        print(rating);
       },
     );
   }
