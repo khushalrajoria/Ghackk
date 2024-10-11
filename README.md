@@ -106,16 +106,16 @@ lib/
 ## 📸 Screenshots
 
 ### Home Screen
-![Home Screen](https://github.com/khushalrajoria/Ghackk/blob/main/path/to/your/image1.jpeg)  
+![Home Screen](https://github.com/khushalrajoria/Ghackk/blob/main/screenshots/WhatsApp%20Image%202024-10-11%20at%2010.23.36%20PM.jpeg)  
 
 ### Detail Screen
-![Detail Screen](https://github.com/khushalrajoria/Ghackk/blob/main/path/to/your/image2.jpeg)  
+![Detail Screen](https://github.com/khushalrajoria/Ghackk/blob/main/screenshots/WhatsApp%20Image%202024-10-11%20at%2010.23.35%20PM%20(1).jpeg)  
 
-### Favorites Screen
-![Favorites Screen](https://github.com/khushalrajoria/Ghackk/blob/main/path/to/your/image3.jpeg)  
+### More Detial Screen
+![Favorites Screen](https://github.com/khushalrajoria/Ghackk/blob/main/screenshots/WhatsApp%20Image%202024-10-11%20at%2010.23.35%20PM%20(2).jpeg)  
 
-### Rating Widget
-![Rating Widget](https://github.com/khushalrajoria/Ghackk/blob/main/path/to/your/image4.jpeg)  
+### Favorite Screen
+![Rating Widget](https://github.com/khushalrajoria/Ghackk/blob/main/screenshots/WhatsApp%20Image%202024-10-11%20at%2010.23.35%20PM.jpeg)  
 
 ## 🌟 Future Enhancements
 
