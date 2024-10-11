@@ -103,6 +103,20 @@ lib/
 
 ---
 
+## 📸 Screenshots
+
+### Home Screen
+![Home Screen](https://github.com/khushalrajoria/Ghackk/blob/main/path/to/your/image1.jpeg)  
+
+### Detail Screen
+![Detail Screen](https://github.com/khushalrajoria/Ghackk/blob/main/path/to/your/image2.jpeg)  
+
+### Favorites Screen
+![Favorites Screen](https://github.com/khushalrajoria/Ghackk/blob/main/path/to/your/image3.jpeg)  
+
+### Rating Widget
+![Rating Widget](https://github.com/khushalrajoria/Ghackk/blob/main/path/to/your/image4.jpeg)  
+
 ## 🌟 Future Enhancements
 
 - Add **search functionality** for webtoons.
